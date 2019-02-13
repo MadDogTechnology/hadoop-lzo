@@ -1,3 +1,6 @@
+Owner(s): Shawn Yang
+Purpose: Build HBase LZO RP-4508
+
 Hadoop-LZO [![Build Status](https://travis-ci.org/twitter/hadoop-lzo.png?branch=master)](https://travis-ci.org/twitter/hadoop-lzo)
 ==========
 
