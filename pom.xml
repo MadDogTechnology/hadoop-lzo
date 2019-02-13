@@ -418,7 +418,11 @@
         <version>2.14.1</version>
         <configuration>
           <reuseForks>false</reuseForks>
-          <argLine>-Djava.library.path=${build.native.target}/lib</argLine>
+          <!--
+          work around the Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
+          https://talk.openmrs.org/t/error-could-not-find-or-load-main-class-org-apache-maven-surefire-booter-forkedbooter/20509
+          -->
+          <argLine>-Djava.library.path=${build.native.target}/lib -Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
             <systemPropertyVariables>
               <test.build.data>${project.build.directory}/test-classes/data</test.build.data>
               <hadoop.log.dir>${test.log.dir}</hadoop.log.dir>
