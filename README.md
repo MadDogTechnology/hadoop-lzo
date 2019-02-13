@@ -1,5 +1,8 @@
 Owner(s): Shawn Yang
-Purpose: Build HBase LZO RP-4508
+
+Purpose: Build HBase LZO https://resolutebi.atlassian.net/browse/RP-4508
+
+See build instructions in https://github.com/MadDogTechnology/runbooks/blob/master/howtos/hbase/tuning.md
 
 Hadoop-LZO [![Build Status](https://travis-ci.org/twitter/hadoop-lzo.png?branch=master)](https://travis-ci.org/twitter/hadoop-lzo)
 ==========
